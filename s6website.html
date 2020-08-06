@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background as an Image</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        .myclass {
+            height: 100vh;
+            background: url("https://picsum.photos/id/1018/1200/1200");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="myclass" style="display:flex;
+    flex-direction: column;">
+
+        <!---------Header (1st)---------->
+        <div style=" display:flex;
+    flex-direction: row;
+    justify-content: space-between; ">
+
+            <div style="color:white;
+            font-size: 25px;
+            font-weight: bold;
+            padding-left: 10px;"> Mumbai </div>
+
+            <div style="color:white;
+            font-size: 25px;
+            font-weight: bold;
+            padding-right: 10px;"> Log In </div>
+
+        </div>
+
+        <!--------Center (2nd)------------>
+
+
+        <div style=" display:flex;
+        justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height:200vh;
+           
+        ">
+
+            <div style="font-size: 96px;
+            font-weight: bold; color:white"> 16:20 </div>
+
+            <div style="font-size: 25px;
+            font-weight: bold;
+            color:white;"> Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Optio,
+                quod. </div>
+
+        </div>
+
+        <!---------Footer(3rd)------------>
+
+        <div style=" justify-content: flex-end;
+        align-items: flex-end;
+        justify-content: space-between;
+        height:100vh;
+        display:flex;">
+
+            <div style="color:white;
+            font-size: 25px;
+            font-weight: bold;
+            padding-left: 10px;"> Amzing View </div>
+
+            <div style="color:white;
+            font-size: 25px;
+            font-weight: bold;
+            padding-right: 10px; "> Temperature </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

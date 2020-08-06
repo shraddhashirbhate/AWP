@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator Bar</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        .BodyImage {
+
+            background: url("https://picsum.photos/id/1018/1200/1200");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            background: linear-gradient(maroon, red);
+            flex-direction: row;
+            height: 70px;
+        }
+
+        .myclass {
+            padding: 5px;
+            color: white;
+            font-size: 20px;
+            border: 1px solid white;
+            border-radius: 6px;
+            box-shadow: yellow;
+
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="BodyImage">
+
+        <!-------------1st half (Home)------------>
+
+        <div style="display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex:1;
+        align-items: center;">
+
+            <div class="myclass"> Home </div>
+
+            <!----------2nd half (3 box)---------->
+
+            <div style="display:flex;
+            flex-direction: row;">
+
+                <div class="myclass"> Contact Us</div>
+
+                <div class="myclass"> SignIn</div>
+
+                <div class="myclass"> Log In</div>
+
+            </div>
+        </div>
+
+        <div> </div>
+        <div> </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
