@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/Assignments/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html,
+        body {
+
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        #outerDiv {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            justify-content: center;
+
+        }
+
+        .div1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: rgb(2, 29, 2);
+            height: 50px;
+
+        }
+
+        #Larrow {
+            margin-right: 5px;
+            margin-left: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #img1st {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid white;
+            margin-right: 10px;
+        }
+
+        #Fname {
+            color: white;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 100px;
+        }
+
+
+        #div3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+
+        }
+
+        #FontVideo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-right: 20px;
+        }
+
+        #FontCall {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-right: 20px;
+        }
+
+        #FontEllipsis {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            color: white;
+        }
+
+        #SearchInput1 {
+            border-radius: 30px;
+            width: 55vh;
+            height: 35px;
+            display: flex;
+            margin-right: 8px;
+        }
+
+        #SearchInput2 {
+            border-radius: 30px;
+            width: 55vh;
+            height: 35px;
+            display: flex;
+            margin-right: 8px;
+        }
+
+        #refernceId1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #lastId {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .text {
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="FirstDiv" style="display: flex; border: ">
+
+        <div id="outerDiv" style="margin-right: 20px;">
+            <div class="div1">
+                <i class="fas fa-arrow-left" id="Larrow"></i>
+                <div> <img src="login.jpg" id="img1st" /> </div>
+                <div id="Fname"> Shraddha Shirbhate</div>
+                <i class="fas fa-video" id="FontVideo"></i>
+                <i class="fas fa-phone-alt" id="FontCall"></i>
+                <i class="fas fa-ellipsis-v" id="FontEllipsis"></i>
+            </div>
+            <div>
+                <div id="wBody1" style="background-image: url('1.png'); height:80vh">
+                    <div id="refernceId1" style="visibility: hidden; 
+                    display: flex; padding : 5px; justify-content: space-between;">
+                        <div id="msgS1" class="text"> </div>
+                        <div id="msgR1" class="text"> </div>
+                    </div>
+                </div>
+
+                <div id="div3">
+                    <Input type="text" placeholder="type a message" id="SearchInput1"> </input>
+                    <button id="btnsearch" onclick="sendMsg()"> </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="outerDiv">
+            <div class="div1">
+                <i class="fas fa-arrow-left" id="Larrow"></i>
+                <div> <img src="login.jpg" id="img1st" /> </div>
+                <div id="Fname"> Anonymous </div>
+                <i class="fas fa-video" id="FontVideo"></i>
+                <i class="fas fa-phone-alt" id="FontCall"></i>
+                <i class="fas fa-ellipsis-v" id="FontEllipsis"></i>
+            </div>
+            <div>
+                <div id="wBody2" style="background-image: url('1.png'); height:80vh">
+                    <div id="refernceId2" style="visibility: hidden;justify-content: space-between; 
+                        display: flex; padding : 5px;">
+                        <div id="msgS2" class="text"> </div>
+                        <div id="msgR2" class="text"> </div>
+                    </div>
+                </div>
+                <div id="div3">
+                    <Input type="text" placeholder="type a message" id="SearchInput2"> </input>
+                    <button id="btnsearch" onclick="sendMsg1()"> </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="whtsapp.js"> </script>
+
+</html>
