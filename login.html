@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+
+    <style>
+        .login-box {
+            height: 100vh;
+            border: 1px solid black;
+            background: linear-gradient(120deg, blue, white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .forms {
+            display: flex;
+            margin: 4vh;
+            padding: 4vh;
+            flex-direction: column;
+            border: 1px solid black;
+            background: royalblue;
+        }
+
+
+        .forms.input {
+            margin-bottom: 2vh;
+            padding: 2vh;
+            width: 100%;
+            border: 0;
+            box-sizing: border-box;
+            font-size: 2vh;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <div class="forms">
+            <h2> Enter UserName </h2>
+            <input class="forms-control" type="text" placeholder="userName" />
+
+            <h2> Enter Password</h2>
+            <input type="text" placeholder="Password" />
+
+            <h2> Enter Email</h2>
+            <input type="text" placeholder="Email" />
+
+            <br>
+            <button type="button" class="btn btn-outline-success" onclick="Submit()">Success</button>
+        </div>
+    </div>
+</body>
+
+</html>
